@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+<!-- Answer to the questions from Intercom for the Customer Support Engineer Position -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Answer to Written Assesment</title>
+    <style>
+        body {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            max-width: 800px;
+            margin: 0px 50px -30px 50px;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            color: black;
+        }
+
+        .essay-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            box-shadow: 5px 5px 0 black;
+            padding: 20px 10px 20px 10px;
+        }
+
+        .essay {
+            font-size: 20px;
+            padding: 15px 15px 0 50px;
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: gray;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .code {
+            padding: 15px 15px 0 50px;
+        }
+
+        footer,
+        h3 {
+            text-align: left;
+            padding: 0px 0px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="essay-container">
+        <header>
+            <h1>Answers to Written Assesment</h1>
+        </header>
+        <div class="essay">
+            <h2>1. Describe a coding solution that you were most proud of. This could be a small problem that you solved smartly, or a larger problem that you had to break down into pieces. Please include the details on the specific scenario, the blockers you came up against, and your specific technical efforts to build the solution.</br></h2>
+            <p>
+                Answer:I built a cocktail app where you can search for alcoholic drinks and how to make them. I used
+            React, React Router and a third party API.
+            The app was pretty interesting to get working off such a poorly built API; However I took the challenge
+            head on, had issues rendering the data while ignoring null values. I searched far and wide, worked a few
+            variables, got help from my instructors until I forged the solution. I learned that most time you have
+            to work with a third party API, you have to build your app around it no matter how low its quality and documentation are.</p>
+            <p>It was interesting to see how this data needed to be told how to handle every output it had with code and logic.</p>
+            <p>My solution required a bit of learning, quick thinking and clever coding which made me really proud</p>
+            <p>In the future I plan to approach this code by analyzing the data structure better, sudo-coding and planning my approach carefully</p>
+            </p>                        <a href="https://github.com/rixiobarrios/cocktail-recipe"> See GitHub Repository for app Here</a></br>
+                        <p>Code to Render "null" Value on Data:</p>
+                        <div class="code">
+                            <code>
+                                            const ingredients = [];</br>
+                                            function getRecipeIngredients() {</br>
+                                            let i = 1;</br>
+                                            while (recipe['strIngredient' + i]) {</br>
+                                                const name = recipe['strMeasure' + i];</br>
+                                                const measurement = recipe['strIngredient' + i];</br>ingredients.push(name + ' ' + measurement);</br>
+                                                 i++;</br> 
+                                                }
+                                        </code></div>
+            <h2>2. Troubleshooting - You've been chatting with a user who is writing code to interact with our API, but they are getting HTTP 504 status code errors and they've requested assistance. How do you help them identify the root cause and work through the errors? What kind of information would you gather from them, and how would you use that to help solve the issue?</br></h2>
+            <p>Answer: 
+            </p>
+            <h2>3. The link below contains some code with errors. Can you detect these issues and identify the fix? <a href="https://gist.github.com/iainbreen/8e8ffda05d06809a84388a7bf311aa59"> Link</a></br></h2>
+            <p>Answer:
+            </p>
+            <h2>4. Can you give us an example of when you’ve helped a customer solve their actual problem, rather than treating the symptom? This could be a time where you had to figure out what the customer's actual goal was, even if it wasn't clear from their original question or problem.</br></h2>
+            <p>Answer:
+            </p>
+            <h2>5. Tell us about a time where you didn't know what to do next, or how to solve a challenging problem. Explain the scenario, how you decided on what was needed, how you prioritized it, and the final outcome.</br></h2>
+            <p>Answer:
+            </p>
+            <footer>
+                <h3>Thank you very much for taking the time to look at my application<a
+                        href="https://www.rixiobarrios.com"> Rixio Barrios</a></h3>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
