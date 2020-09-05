@@ -2,6 +2,6 @@
 
 # Intercome: Wrtitten Assesment
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f6b80c9e-5902-46bf-bf47-7afea7d3281c/deploy-status)](https://app.netlify.com/sites/intercom-written-assesment/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/64eff5a2-58d7-4d45-b5c0-347cfdc92e9e/deploy-status)](https://app.netlify.com/sites/intercom-written-assessment/deploys)
 
 Answers to a document as part of the interview process for Intercom
