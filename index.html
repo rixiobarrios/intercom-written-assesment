@@ -85,12 +85,12 @@
                         <p>Code to Render "null" Value on Data:</p>
                         <div class="code">
                             <code>
-                                            const ingredients = [];</br>
-                                            function getRecipeIngredients() {</br>
+                                    const ingredients = [];</br>
+                                         function getRecipeIngredients() {</br>
                                             let i = 1;</br>
-                                            while (recipe['strIngredient' + i]) {</br>
-                                                const name = recipe['strMeasure' + i];</br>
-                                                const measurement = recipe['strIngredient' + i];</br>ingredients.push(name + ' ' + measurement);</br>
+                                         while (recipe['strIngredient' + i]) {</br>
+                                             const name = recipe['strMeasure' + i];</br>
+                                             const measurement = recipe['strIngredient' + i];</br>ingredients.push(name + ' ' + measurement);</br>
                                                  i++;</br> 
                                                 }
                                         </code></div>
@@ -101,8 +101,20 @@
                 If this is the case I would offer my apologies and give the user an aproximate time for the fix based on feedback from the team in charge of such a function.
             </p>
             <h2>3. The link below contains some code with errors. Can you detect these issues and identify the fix? <a href="https://gist.github.com/iainbreen/8e8ffda05d06809a84388a7bf311aa59"> Link</a></br></h2>
-            <p>Answer:
-            </p>
+            <p>Answer: I am not familiar with Ruby but I understand it's pretty similar to Javascript so I took that approach and came up with this fix.</p>
+                                        <p>Name fixer(spelling) written on Ruby:</p>
+                        <div class="code">
+                            <code>
+                                def fix_spelling(name)
+                                    if name == "twittr"
+                                    name = "twitter"
+                                else 
+                                    fix_spelling(name)
+                                end   
+                                    return name
+                                  end
+                                 
+                                        </code></div>
             <h2>4. Can you give us an example of when you’ve helped a customer solve their actual problem, rather than treating the symptom? This could be a time where you had to figure out what the customer's actual goal was, even if it wasn't clear from their original question or problem.</br></h2>
             <p>Answer:
             </p>
