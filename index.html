@@ -72,17 +72,22 @@
         <div class="essay">
             <h2>1. Describe a coding solution that you were most proud of. This could be a small problem that you solved smartly, or a larger problem that you had to break down into pieces. Please include the details on the specific scenario, the blockers you came up against, and your specific technical efforts to build the solution.</br></h2>
             <p>
-                Answer:I built a cocktail app where you can search for alcoholic drinks and how to make them. 
-                I used React, React Router and a third party API.
-            The app was pretty interesting to get working off such a poorly built API; However I took the challenge
-            head on, had issues rendering the data while ignoring null values. I searched far and wide, worked a few
-            variables, got help from my instructors until I forged the solution. I learned that most time you have
-            to work with a third party API, you have to build your app around it no matter how low its quality and documentation are.</p>
-            <p>It was interesting to see how this data needed to be told how to handle every output it had with code and logic.</p>
-            <p>My solution required a bit of learning, quick thinking and clever coding which made me really proud</p>
-            <p>In the future I plan to approach this code by analyzing the data structure better, sudo-coding and planning my approach carefully</p>
+                Answer:I built a cocktail app where you can search for alcoholic
+drinks and how to make them. I used React, React Router and a third
+party API.  The app got pretty interesting as I was working off such a poorly built
+API.  However I took the challenge head on but had issues rendering the
+data while ignoring null values. I searched far and wide.  I even worked a few
+variables and got help from my instructors until I forged the solution.
+Knowing that most times you have to work with a third party API, you
+have to build your app around it no matter how low its quality and
+documentation are. It was interesting to see how this data needed to
+be told how to handle every output it had with code and logic. My
+solution required a bit of learning, quick thinking and clever coding
+which made me really proud of myself and my work. In the future, I plan to approach this code
+by analyzing the data structure better, planning my
+approach more carefully and pseudo coding.</p>
             </p><a href="https://github.com/rixiobarrios/cocktail-recipe"> See GitHub Repository for More Information</a></br>
-                        <p>Code to Render "null" Value on Data:</p>
+                        <p>Code to render "null" value on data:</p>
                         <div class="code">
                             <code>
                                     const ingredients = [];</br>
@@ -95,32 +100,73 @@
                                                 }
                                         </code></div>
             <h2>2. Troubleshooting - You've been chatting with a user who is writing code to interact with our API, but they are getting HTTP 504 status code errors and they've requested assistance. How do you help them identify the root cause and work through the errors? What kind of information would you gather from them, and how would you use that to help solve the issue?</br></h2>
-            <p>Answer: It's important to understand that a 504 error refers to a gateway error while attempting to load a page which response from the server was not timed out. This occurs when an intermediary server or a network interface cannot respond to a browser's query within a suficcient time. The error can originate on the customer side or on the side of the provider/operator. 
-                We can start troubleshooting the issue on the user side by asking them to reload the desired web application or try to access it from another device in their network. The next step would be to have the user restart their modem, router and/or switch. This is unusual but a defective configuration on a proxy server might be generating issues. 
-                A quick review at the setting on the user's browser might show the problem. The user DNS server might be the issue, trying another DNS server might solve the problem. Ultimately, if all fails I would start looking on our side for possible service outtages or updates that may cause settings to change or go down. 
-                If this is the case I would offer my apologies and give the user an aproximate time for the fix based on feedback from the team in charge of such a function.
+            <p>Answer: It is important to understand that a 504 error refers to a
+gateway error while attempting to load a page whose response from the
+server was not timed out. This occurs when an intermediary server or a
+network interface cannot respond to a browser's query within a
+sufficient time. The error can originate on the customer side or on
+the side of the provider/operator. We can start troubleshooting the
+issue on the user side by asking them to reload the desired web
+application or try to access it from another device in their network.
+The next step would be to have the user restart their modem, router
+and/or switch. This is unusual but a defective configuration on a
+proxy server might be generating issues. A quick review of the setting
+on the user's browser might show the problem. The user DNS server
+might be the issue.  Perhaps trying another DNS server might solve the problem.
+Ultimately, if all of these fail, I would start looking on our side for
+possible service outages or updates that may cause settings to change
+or go down.  If this is the case, I would offer my apologies and give the user an
+approximate time for the fix based on feedback from the team in charge
+of such a function.
             </p>
             <h2>3. The link below contains some code with errors. Can you detect these issues and identify the fix? <a href="https://gist.github.com/iainbreen/8e8ffda05d06809a84388a7bf311aa59"> Link</a></br></h2>
-            <p>Answer: I am not familiar with Ruby but I understand it's pretty similar to Javascript so I took that approach and came up with this fix.</p>
+            <p>Answer: I am not familiar with Ruby but I understand it's pretty similar to Javascript so I took that approach and came up with this fix. Deleting the recursive call I believe this is correct.</p>
                                         <p>Name fixer(spelling) written on Ruby:</p>
                         <div class="code">
                             <code>
                                 def fix_spelling(name)
-                                    if name == "twittr"
-                                    name = "twitter"
-                                else 
-                                    fix_spelling(name)
-                                end   
-                                    return name
-                                  end
+                                    if name == 'twittr'
+                                    'twitter'
+                                   else
+                                        name
+                                    end
+                                   end
                                  
                                         </code></div>
             <h2>4. Can you give us an example of when you’ve helped a customer solve their actual problem, rather than treating the symptom? This could be a time where you had to figure out what the customer's actual goal was, even if it wasn't clear from their original question or problem.</br></h2>
-            <p>Answer:
-            </p>
+            <p>Answer: While I was working as a help desk support agent for Fifth Third Bank,
+I had a teller that had problems printing a receipt for her customer.
+The teller thought it was an issue with the computer or the printer.
+She had already started her computer and printer but the issue
+remained. Luckily, I had the ability to get into her workstation
+remotely. My first instinct was to look at the proprietary software
+that they use to look up a customer's account. I looked at the
+settings and realized that her problem did not originate in the
+computer or printer. The settings for the Fifth Third Bank customer portal
+were defaulting to her regular printer and not the receipt printer.
+I also realized this was a known bug in the previous version of the
+portal, so I sent a remote request to all tellers to let me into their
+machine remotely and update their software. Once the branch updated
+their software, I set up their configurations to their receipt
+printers and solved the issue location wide.</p>
             <h2>5. Tell us about a time where you didn't know what to do next, or how to solve a challenging problem. Explain the scenario, how you decided on what was needed, how you prioritized it, and the final outcome.</br></h2>
-            <p>Answer:
-            </p>
+            <p>Answer:  As a diplomat I encountered a situation with a national who
+was a minor and was being detained by the US authorities. This was
+the first case of its kind that I have encountered so my first instinct was 
+to find the international code referring to
+unaccompanied minors and their rights in foreign countries. I then
+followed this by reading about our role as a consulate and finally I
+researched the role of our ministry dealing with interior relations. The objective
+was to find a legal vehicle to manage the situation appropriately.
+Armed with all the knowledge of the legal framework I was allowed to
+act upon, I proceeded to make a report for my supervisor back in our
+country detailing the situation and what our various courses of action
+could be based on the current legal framework. I awaited their orders
+to proceed.  In the meantime, I proceeded to notify the family of the
+child about the situation. I was instructed to visit the child,
+provide comfort, and serve as a bridge for the child and his family to
+communicate. After exercising our rights concerning the child, we proceeded to take the child back to our country and reunited him with his
+family.</p>
             <footer>
                 <h3>Thank you very much for taking the time to look at my application<a href="https://www.rixiobarrios.com"> Rixio Barrios</a></h3>
             </footer>
